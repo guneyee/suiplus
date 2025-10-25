@@ -1,10 +1,4 @@
-// Copyright (c) Mysten Labs, Inc.
-// SPDX-License-Identifier: Apache-2.0
 
-/// Description:
-/// This module provides a wrapper for the KioskOwnerCap that makes the Kiosk
-/// non-transferable and "owned".
-///
 module kiosk::personal_kiosk {
     use std::option::{Self, Option};
     use sui::transfer;
