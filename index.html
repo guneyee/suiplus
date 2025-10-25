@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sui Plus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/suiplus.png" alt="suiplus logo" />
+        <span>Sui</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#trade">TRADE</a></li>
+          <li><a href="#rent">RENT</a></li>
+          <li><a href="#history">HISTORY</a></li>
+          <li><a href="#docs">DOCS</a></li>
+          <li><a href="#help-center">HELP CENTER</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle" id="menuToggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="right-controls">
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">🔍</button>
+        </div>
+        <button class="connect-btn">Connect Wallet</button>
+
+        <div class="user-area hidden" id="userArea">
+          <div class="avatar">🧿</div>
+          <div class="address-chip">
+            <span id="addrShort">0x123...abc</span>
+          </div>
+          <div class="caret">▾</div>
+        </div>
+
+        <!-- Dropdown panel -->
+        <div class="user-menu" id="userMenu" role="menu" aria-hidden="true">
+          <div class="user-menu-header">
+            <span class="label">Connected</span>
+            <span class="addr-full" id="addrFull">0x…</span>
+          </div>
+          <button class="menu-item" data-action="profile">Profile</button>
+          <button class="menu-item" data-action="activity">Activity</button>
+          <button class="menu-item" data-action="settings">
+            Account Settings
+          </button>
+          <button class="menu-item" data-action="support">Support</button>
+          <hr />
+          <button class="menu-item" data-action="copy">Copy Address</button>
+          <button class="menu-item danger" data-action="logout">Log Out</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Build the Future with Sui</h1>
+        <p>zkLogin • Walrus • Rent powered by the next-gen Web3 ecosystem</p>
+        <button class="primary-btn">Explore dApp</button>
+      </div>
+    </section>
+
+    <section id="trade" class="section">
+      <h2>Trade</h2>
+      <p>
+        Secure zero-knowledge authentication for a seamless user experience.
+      </p>
+      <button class="secondary-btn">Integrate zkLogin</button>
+    </section>
+
+    <section id="rent" class="section">
+      <h2>Rent</h2>
+      <p>
+        Decentralized, encrypted, and persistent storage solution for your
+        assets.
+      </p>
+      <button class="secondary-btn">Access Storage</button>
+    </section>
+
+    <section id="history" class="section">
+      <h2>History</h2>
+      <p>
+        Lease digital assets and pay only for what you use — fast, secure, fair.
+      </p>
+      <button class="secondary-btn">Start Renting</button>
+    </section>
+
+    <section id="docs" class="section">
+      <h2>Documentation</h2>
+      <p>Learn how to deploy, integrate and scale your dApp on Sui Network.</p>
+      <button class="secondary-btn">Read Docs</button>
+    </section>
+    <section id="help-center" class="section">
+      <h2>Help Center</h2>
+      <p>Learn how to deploy, integrate and scale your dApp on Sui Network.</p>
+      <button class="secondary-btn">Read Docs</button>
+    </section>
+
+    <footer>
+      <p>© 2025 Sui Web3 Project • Built with 💜 on Sui Network 💧</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
