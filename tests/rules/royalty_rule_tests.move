@@ -2,14 +2,14 @@
 // SPDX-License-Identifier: Apache-2.0
 
 #[test_only]
-module kiosk::royalty_rule_tests {
+module nft_rental_suiplus::royalty_rule_tests {
     use sui::coin;
     use sui::sui::SUI;
     use sui::tx_context::dummy as ctx;
     use sui::transfer_policy as policy;
     use sui::transfer_policy_tests as test;
 
-    use kiosk::royalty_rule;
+    use nft_rental_suiplus::royalty_rule;
 
     #[test]
     fun test_default_flow_0() {
@@ -30,7 +30,7 @@ module kiosk::royalty_rule_tests {
     }
 
     #[test]
-    #[expected_failure(abort_code = kiosk::royalty_rule::EInsufficientAmount)]
+    #[expected_failure(abort_code = nft_rental_suiplus::royalty_rule::EInsufficientAmount)]
     fun test_default_flow_0_invalid_amount_fail() {
         let ctx = &mut ctx();
         let (policy, cap) = test::prepare(ctx);
@@ -133,7 +133,7 @@ module kiosk::royalty_rule_tests {
     }
 
     #[test]
-    #[expected_failure(abort_code = kiosk::royalty_rule::EIncorrectArgument)]
+    #[expected_failure(abort_code = nft_rental_suiplus::royalty_rule::EIncorrectArgument)]
     fun test_incorrect_config() {
         let ctx = &mut ctx();
         let (policy, cap) = test::prepare(ctx);
@@ -143,7 +143,7 @@ module kiosk::royalty_rule_tests {
     }
 
     #[test]
-    #[expected_failure(abort_code = kiosk::royalty_rule::EInsufficientAmount)]
+    #[expected_failure(abort_code = nft_rental_suiplus::royalty_rule::EInsufficientAmount)]
     fun test_insufficient_amount() {
         let ctx = &mut ctx();
         let (policy, cap) = test::prepare(ctx);

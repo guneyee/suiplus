@@ -15,7 +15,7 @@
 /// - Require a confirmation in a third party module
 /// - Implement a custom requirement on the creator side an link the logic.
 ///
-module kiosk::witness_rule {
+module nft_rental_suiplus::witness_rule {
     use sui::transfer_policy::{
         Self as policy,
         TransferPolicy,

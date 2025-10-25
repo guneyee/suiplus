@@ -18,7 +18,7 @@
 /// enforce policies on every trade (item can be transferred only through a
 /// trade + Kiosk is fixed to the owner).
 ///
-module kiosk::personal_kiosk_rule {
+module nft_rental_suiplus::personal_kiosk_rule {
     use sui::kiosk::{Self, Kiosk};
     use sui::transfer_policy::{
         Self as policy,
@@ -27,7 +27,7 @@ module kiosk::personal_kiosk_rule {
         TransferRequest
     };
 
-    use kiosk::personal_kiosk;
+    use nft_rental_suiplus::personal_kiosk;
 
     /// An item hasn't been placed into the Kiosk before the call.
     const EItemNotInKiosk: u64 = 0;
@@ -50,4 +50,4 @@ module kiosk::personal_kiosk_rule {
 
         policy::add_receipt(Rule {}, request)
     }
-}
+}cargo install --locked --git https://github.com/MystenLabs/sui.git --branch main sui

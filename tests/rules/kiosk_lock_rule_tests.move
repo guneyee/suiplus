@@ -3,13 +3,13 @@
 
 #[test_only]
 /// Test illustrating how an asset can be forever locked in the Kiosk.
-module kiosk::kiosk_lock_rule_tests {
+module nft_rental_suiplus::kiosk_lock_rule_tests {
     use sui::kiosk;
     use sui::kiosk_test_utils::{Self as test, Asset};
     use sui::transfer_policy as policy;
     use sui::transfer;
 
-    use kiosk::kiosk_lock_rule as kiosk_lock;
+    use nft_rental_suiplus::kiosk_lock_rule as kiosk_lock;
 
     #[test]
     fun test_item_always_locked() {
